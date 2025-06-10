@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/967187486719428140/a44e3a2b527742dcbc1466039ea9fb34/artifacts
+end_time: 1749542496683
+entry_point_name: ''
+experiment_id: '967187486719428140'
+lifecycle_stage: active
+run_id: a44e3a2b527742dcbc1466039ea9fb34
+run_name: DecisionTree
+run_uuid: a44e3a2b527742dcbc1466039ea9fb34
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749542489601
+status: 3
+tags: []
+user_id: saipr
