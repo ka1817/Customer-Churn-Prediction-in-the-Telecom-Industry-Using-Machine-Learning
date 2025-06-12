@@ -4,3 +4,5 @@ matplotlib
 scikit-learn
 mlflow
 joblib
+fastapi
+uvicorn
