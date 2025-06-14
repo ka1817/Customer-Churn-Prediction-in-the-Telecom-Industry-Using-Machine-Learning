@@ -1,13 +1,30 @@
 # src/data_preprocessing.py
+
 import pandas as pd
 from sklearn.preprocessing import OneHotEncoder, OrdinalEncoder, StandardScaler
 from sklearn.compose import ColumnTransformer
 import logging
 import sys
 import os
+
+# Add project root to sys.path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Setup logging
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+log_dir = os.path.join(base_dir, 'logs')
+os.makedirs(log_dir, exist_ok=True)
+
+log_file_path = os.path.join(log_dir, 'pipeline.log')
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(log_file_path),
+        logging.StreamHandler()
+    ]
+)
 
 def preprocess_data(df):
     logging.info("Starting preprocessing")
