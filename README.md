@@ -63,7 +63,7 @@ TELECOM_CUSTOMER_CHURN/
 ## ⚙️ Tech Stack
 
 * **Languages**: Python, HTML, CSS
-* **Libraries**: scikit-learn, pandas, joblib, FastAPI, MLflow
+* **Libraries**: scikit-learn,pandas,seaborn,matplotlib,joblib, FastAPI, MLflow
 * **Tools**: Docker, GitHub Actions, EC2
 * **CI/CD**: Pytest + GitHub Actions + DockerHub
 
