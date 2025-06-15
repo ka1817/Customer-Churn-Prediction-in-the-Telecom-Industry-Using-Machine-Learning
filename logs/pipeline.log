@@ -1,0 +1,18 @@
+2025-06-15 12:52:41,871 - INFO - Data loaded from C:\Users\saipr\telecom_customer_churn_prediction\data\telecom_churn_data.csv. Shape: (7043, 21)
+2025-06-15 12:52:41,871 - INFO - Starting preprocessing...
+2025-06-15 12:52:41,910 - INFO - Preprocessing complete.
+2025-06-15 12:52:43,203 - INFO - Training model: RandomForest
+2025-06-15 12:52:52,671 - INFO - Model: RandomForest | Accuracy: 0.7935 | F1 Score: 0.5776 | ROC AUC: 0.8308
+2025-06-15 12:53:03,550 - INFO - Saved RandomForest to C:\Users\saipr\telecom_customer_churn_prediction\models\RandomForest_best_model.pkl
+2025-06-15 12:53:03,551 - INFO - Training model: LogisticRegression
+2025-06-15 12:53:03,754 - INFO - Model: LogisticRegression | Accuracy: 0.7892 | F1 Score: 0.5626 | ROC AUC: 0.8289
+2025-06-15 12:53:08,267 - INFO - Saved LogisticRegression to C:\Users\saipr\telecom_customer_churn_prediction\models\LogisticRegression_best_model.pkl
+2025-06-15 12:53:08,267 - INFO - Training model: SVC
+2025-06-15 12:53:34,023 - INFO - Model: SVC | Accuracy: 0.7892 | F1 Score: 0.5410 | ROC AUC: 0.8176
+2025-06-15 12:53:40,563 - INFO - Saved SVC to C:\Users\saipr\telecom_customer_churn_prediction\models\SVC_best_model.pkl
+2025-06-15 12:53:40,563 - INFO - Training model: DecisionTree
+2025-06-15 12:53:40,901 - INFO - Model: DecisionTree | Accuracy: 0.7885 | F1 Score: 0.5743 | ROC AUC: 0.8270
+2025-06-15 12:53:45,843 - INFO - Saved DecisionTree to C:\Users\saipr\telecom_customer_churn_prediction\models\DecisionTree_best_model.pkl
+2025-06-15 12:53:45,844 - INFO - Training model: GradientBoosting
+2025-06-15 12:54:32,010 - INFO - Model: GradientBoosting | Accuracy: 0.8055 | F1 Score: 0.5823 | ROC AUC: 0.8437
+2025-06-15 12:54:36,936 - INFO - Saved GradientBoosting to C:\Users\saipr\telecom_customer_churn_prediction\models\GradientBoosting_best_model.pkl

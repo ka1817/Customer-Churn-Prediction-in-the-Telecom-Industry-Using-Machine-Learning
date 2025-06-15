@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/722932807405527258/3f829ae3b4b940e0af9fe43deb5225c7/artifacts
+end_time: 1749972901103
+entry_point_name: ''
+experiment_id: '722932807405527258'
+lifecycle_stage: active
+run_id: 3f829ae3b4b940e0af9fe43deb5225c7
+run_name: RandomForest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749972887759
+status: 3
+tags: []
+user_id: saipr

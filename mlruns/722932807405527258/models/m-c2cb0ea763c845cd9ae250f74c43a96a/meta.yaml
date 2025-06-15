@@ -1,0 +1,10 @@
+artifact_location: mlflow-artifacts:/722932807405527258/models/m-c2cb0ea763c845cd9ae250f74c43a96a/artifacts
+creation_timestamp: 1749972214289
+experiment_id: '722932807405527258'
+last_updated_timestamp: 1749972220421
+model_id: m-c2cb0ea763c845cd9ae250f74c43a96a
+model_type: ''
+name: SVC
+source_run_id: 038f8484a5d84856934baf0d5ccb33bd
+status: 2
+status_message: null
