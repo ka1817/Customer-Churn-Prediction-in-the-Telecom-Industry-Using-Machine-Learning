@@ -1,10 +1,7 @@
-# src/data_ingestion.py
-
 import pandas as pd
 import os
 import logging
 
-# Setup logging
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_dir = os.path.join(base_dir, 'logs')
 os.makedirs(log_dir, exist_ok=True)

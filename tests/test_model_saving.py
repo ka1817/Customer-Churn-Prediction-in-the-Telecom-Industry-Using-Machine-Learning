@@ -5,13 +5,11 @@ import warnings
 warnings.filterwarnings("ignore")
 
 def test_model_training_creates_model_files():
-    # Import and execute model_training.py
     model_training_path = os.path.join(os.path.dirname(__file__), "..", "src", "model_training.py")
     spec = importlib.util.spec_from_file_location("model_training", model_training_path)
     model_training = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(model_training)
 
-    # Define expected model filenames
     base_dir = os.path.dirname(os.path.dirname(__file__))
     models_dir = os.path.join(base_dir, "models")
     expected_models = [

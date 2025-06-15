@@ -6,5 +6,5 @@ class TestDataIngestion(unittest.TestCase):
     def test_data_ingestion_output(self):
         df = data_ingestion()
         self.assertIsInstance(df, pd.DataFrame)
-        self.assertFalse(df.empty, "DataFrame should not be empty")
+        self.assertFalse(df.empty, "DataFrame should not be Empty")
         self.assertIn('Churn', df.columns, "'Churn' column should be present")

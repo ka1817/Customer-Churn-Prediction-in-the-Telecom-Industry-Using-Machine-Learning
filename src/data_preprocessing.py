@@ -1,5 +1,3 @@
-# src/data_preprocessing.py
-
 import logging
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler

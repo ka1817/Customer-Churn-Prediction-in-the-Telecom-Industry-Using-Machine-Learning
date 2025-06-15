@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.data_ingestion import data_ingestion
 from src.data_preprocessing import preprocess_data
 
-# Setup logging
+
 base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 log_dir = os.path.join(base_dir, 'logs')
 os.makedirs(log_dir, exist_ok=True)
@@ -30,12 +30,11 @@ logging.basicConfig(
     ]
 )
 
-# Load and preprocess data
 df = data_ingestion()
 X, y, preprocessor = preprocess_data(df)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
 
-# Model definitions and hyperparameter grids
+
 models = {
     "RandomForest": RandomForestClassifier(random_state=42),
     "LogisticRegression": LogisticRegression(max_iter=1000),
@@ -96,7 +95,6 @@ for name, model in models.items():
     f1 = f1_score(y_test, y_pred)
     auc = roc_auc_score(y_test, y_prob) if y_prob is not None else 0.0
 
-    # Minimal metrics logging
     logging.info(f"Model: {name} | Accuracy: {acc:.4f} | F1 Score: {f1:.4f} | ROC AUC: {auc:.4f}")
 
     with mlflow.start_run(run_name=name):

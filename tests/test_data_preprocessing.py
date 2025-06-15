@@ -9,6 +9,6 @@ class TestDataPreprocessing(unittest.TestCase):
 
     def test_preprocess_shape(self):
         X, y, preprocessor = preprocess_data(self.raw_df)
-        self.assertEqual(len(X), len(y), "Features and target must have the same number of samples")
+        self.assertEqual(len(X), len(y), "Features and target must have the same number of Samples")
 
     
