@@ -1,5 +1,3 @@
-# main.py
-
 import os
 import joblib
 import uvicorn
@@ -14,10 +12,9 @@ app = FastAPI()
 
 BASE_DIR = Path(__file__).resolve().parent
 MODEL_DIR = BASE_DIR / "models"
-MODEL_NAME = "GradientBoosting_best_model.pkl"  # Choose best performing model
+MODEL_NAME = "GradientBoosting_best_model.pkl" 
 model = joblib.load(MODEL_DIR / MODEL_NAME)
 
-# Static and templates
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
